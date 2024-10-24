@@ -1,0 +1,343 @@
+/* COMMON CSS STARTS HERE */
+*{
+  margin: 0;
+  padding: O;
+box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+} 
+ul,ol{
+  list-style: none;
+}
+body{
+  font-family:Poppins ;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container{
+  max-width: 1240px;
+  margin: auto; 
+
+}
+/* COMMON CSS ENDS HERE */
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  background-color: #b88e2f;
+  padding: 12px 36px;
+  display: inline-block;
+ text-transform: uppercase;
+}
+.img{
+  max-width: 100%;
+  display: block;
+}
+nav  .row{
+  align-items: center;
+}nav  .quickMenu{ 
+  width: 30%;
+}
+nav   .menu{
+  width: 45%;
+}
+nav   .logo{
+  width: 25%;
+}
+nav    .menu ul{
+  display: flex;
+  justify-content: center;
+}
+nav  .menu ul li {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 38px 37.5px;
+  display: inline-block;
+}
+nav   .quickMenu ul{
+  justify-content: end;
+}
+nav   .quickMenu ul li a{
+  font-size: 20px;
+  color: black;
+ padding: 33px 22.5px;
+ display: inline-block;
+}
+#banner{
+  background-image: url(../images/banner.png);
+  height: 716px;
+  background-position:center;
+  background-size: cover;
+  padding-top: 157px;
+  margin-left: 120px;
+  margin-right: 100px;
+
+}
+.bannerCnt{
+  width: 643px;
+  background-color: #fff3e3;
+  padding: 62px 43px 37px;
+  margin-left: auto;
+  margin-right: 58px;
+  border-radius: 10px;
+}
+.bannerCnt h2{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  color: #333;
+}
+.bannerCnt h1{
+  font-family: Poppins;
+  font-weight: 700;
+  font-size:52px;
+  line-height: 65px
+  margin: 4px 0 17px;
+  color: #B88E2F;
+
+
+}
+.bannerCnt p{
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  color: #333333;
+  margin-bottom: 46px;
+}
+#bannerCnt a{
+  padding: 25px 72px;
+text-transform: uppercase;
+}
+#category{
+  margin: 52px 0 56px;
+ text-align: center;
+}
+#category  .heading h2{
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 32px;
+
+}
+#category  .heading p{
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+}
+.categoryCard{
+  width: 33.33%;
+  margin-top: 62px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+.navberCnt{
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+  
+}
+#Products{
+margin-bottom: 69px;
+}
+.productCard{
+ width: calc(25% - 2rem);
+ margin: 0 1rem;
+ position: relative;
+ overflow: hidden;
+ margin: 10px;
+}
+.productCard .productImage {
+  position: relative;
+}
+.productCard  .productImage  .discount{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  font-weight: 500;
+  background: #E97171;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+  top: 24px;
+  right: 24px;
+}
+.productCard  .productImage  .discount1{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  font-weight: 500;
+  background: #2EC1AC;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50%;
+  top: 24px;
+  right: 24px;
+}
+.productCard  .productCnt{
+  padding: 16px 20px 30px;
+  background-color: #f4f5f7;
+}
+.productCard  .productCnt h3 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #3a3a3a;
+}
+.productCard  .productCnt p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3a3a3a;
+  margin: 8px 0;
+}
+.productCard .productCnt h4 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #3a3a3a;
+}
+.productCard .overlay{
+  position: absolute;
+  background-color: rgba(58, 58, 58,0.72);
+  color: white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  transform: translateY(100%);
+  transition: 0.5s;
+ 
+}
+.productCard .overlay .cnt{
+ transform: translateY(60px);
+ transition: 0.35s;
+ opacity: 0;
+ transition-delay: 0.3s;
+}
+.productCard:hover .overlay,
+.productCard:hover .overlay .cnt{
+  transform: translateY(0%);
+  opacity: 1;
+}
+.productCard  .overlay .button{
+  background-color: white;
+  color: #b88e2f;
+  transition: 0.2s;
+  margin-bottom: 24px;
+}
+.productCard .overlay .button:hover{
+  background-color: #b88e2f;
+  color: white;
+ }
+.productCard .overlay .row a{
+  margin: 0 10px;
+}
+.showMoreBtn {
+  text-align: center;
+  margin: auto;
+  margin-top: 32px;
+ }
+ /* FOOTER SECTION STARTS */
+footer{
+  border-top: 1px solid rgba(0, 0, 0,0.17);
+}
+footer   .footerTop{
+  background: #D9D9D9;
+  height: 109px;
+  margin-bottom: 23px;
+}
+.address{
+  width: 30%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #9F9F9F;
+
+}
+.address p{
+  max-width: 285px;
+}
+.menu{
+  width: 15%;
+}
+.quickMenu,
+.subscribe{
+  width: 25%;
+}
+
+.menu a,
+.quickMenu a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 48px;
+  display: block;
+}
+footer  .footerMiddle{
+   margin-bottom: 48px;
+}
+.subscribe input{
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  color: #9F9F9F;
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+ padding: 5px 0;
+  margin-right: 10px;
+}
+.subscribe button{
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+text-align: left;
+background-color: transparent;
+}
+.footerEnd {
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+border-top: 1px solid #D9D9D9;
+padding: 35px 0;
+width: 1240.01px;
+height: 0px;
+top: 408px;
+left: 100px;
+border: 1px 0px 0px 0px;
+}
